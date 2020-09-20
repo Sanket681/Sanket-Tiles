@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+.header{
+    height: auto;
+    width: 100%;
+    position: relative;
+    background: linear-gradient(rgba(10, 10, 10,0.7),rgba(15, 15, 15, 0.5)),url('../images/2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.navbar-brand img{
+    height: auto;
+    width: 200px;
+}
+.navbar-nav{
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    letter-spacing: 1px;
+}
+.nav-item a{
+    color: rgba(255, 255, 255, 0.9) !important;  
+}
+.nav-item a:hover{
+    color: rgba(247, 146, 30,0.9) !important;
+}
+.mx-5{
+    margin: 5px !important;
+}
+.header-section{
+    width: 100%;
+    min-height: 85vh;
+    max-height: 150vh;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+.center-div{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+}
+.center-div h1 span{
+    animation: changecolor 2s infinite;
+}
+@keyframes changecolor{
+    50%{color:rgb(255, 106, 1) ;}
+    100%{color:rgba(255, 255, 255, 0.9);}
+}
+.header-buttons a{
+    margin: 0px 5px;
+    padding: 12px 25px;
+    color: rgba(255, 255, 255, 0.9);
+    background: rgb(255, 106, 1);
+    font-size: 1rem;
+    font-weight: bolder;  
+}
+.header-buttons a:hover{
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: bolder;
+    text-decoration: none;
+    background: rgba(255, 106, 1,0.9);
+}
+.center-div p{
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    padding: 10px 0 20px 0;
+    color: rgb(255, 255, 255,0.9);
+}
+.center-div h1{
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 700 !important;   
+}
+
+/* ------------------------------------ABOUT US---------------------------------------- */
+
+.about-us{
+    background-color: rgb(0, 0, 0);
+    height: auto;
+    width: 100%;
+    padding: 50px 25px;
+    position: relative;
+}
+.about-us .row h2{
+    color: rgba(255, 255, 255,0.9);
+    font-weight: 600;
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+.about-us .row h2::after {
+    content: " ";
+    display: block;
+    background-color: rgb(255, 106, 1);
+    height: 3px;
+    width: 150px;
+    margin: 15px 0px;
+}
+.about-us .row p{
+    color: rgb(215, 196, 176);
+    text-align: justify;
+    font-size: 1rem;
+}
+.about-us .row .about-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+}
+
+/* ------------------------------------PRODUCT---------------------------------------- */
+
+.product-div{
+    height: auto;
+    width: 100%;
+    position: relative;
+    background: linear-gradient(rgba(14, 14, 14,0.9),rgba(25, 25, 25, 0.7)),url('../images/1.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 20px 0px;
+}
+.product-div .container h1{
+    color: rgb(255, 255, 255,0.9);
+    font-weight:600 ;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 50px;
+}
+.product-div .container h1::after {
+    content: " ";
+    display: block;
+    background-color: rgb(255, 106, 1);
+    height: 3px;
+    width: 150px;
+    margin: 15px auto 15px;
+}
+.product-div .container .row img{
+    height: 200px;
+    width: 100%;
+}
+.product-div .container .row h2{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(255, 255, 255,0.9);
+    letter-spacing: 2px;
+}
+.product-div .row p{
+    color: rgb(215, 196, 176,0.9);
+    font-weight: 300;
+    text-align: justify;
+    cursor: pointer;
+}
+.product-div .row .product-detail:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* ------------------------------------CLIENTS---------------------------------------- */
+
+.clients{
+    height: auto;
+    width: 100%;
+    position: relative;
+    background-color: rgb(38, 38, 38);
+    background-attachment: fixed;
+    padding-bottom: 50px;
+}
+.clients h1{
+    color: rgb(255, 255, 255,0.9);
+    font-weight:600 ;
+    font-size: 3rem;
+    text-align: center;
+    padding: 50px 0px;
+}
+.clients h1::after {
+    content: " ";
+    display: block;
+    background-color: rgb(255, 106, 1);
+    height: 3px;
+    width: 150px;
+    margin: 15px auto 15px;
+}
+.clients .container .card{
+    cursor: pointer;
+}
+.carousel-indicators{
+    position: absolute;
+    bottom: -50px;   
+}
+.carousel-indicators li{
+    background-color:rgb(255, 106, 1) !important;
+}
+.card-body h4{
+    text-align: center;
+}
+
+/* ------------------------------------CONTACT---------------------------------------- */
+
+.contact{
+    position: relative;
+    height: auto;
+    width: 100%;
+    background: linear-gradient(rgba(14, 14, 14,0.8),rgba(25, 25, 25, 0.5)),url('../images/8.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.contact .heading h1{
+    color: rgba(255, 255, 255,0.9);
+    font-weight: 600;
+    font-size: 3rem;
+    text-align: center;
+    padding: 30px 30px;
+    margin-bottom: 30px;
+}
+.contact .heading h1::after {
+    content: " ";
+    display: block;
+    background-color: rgb(255, 106, 1);
+    height: 3px;
+    width: 150px;
+    margin: 15px auto 15px;
+}
+.contact .btn{
+    color: rgba(255, 255, 255, 0.9) !important;
+    background: rgb(255, 106, 1) !important;
+    font-size: 1rem !important;
+    font-weight: bolder !important;  
+}
+.contact .btn:hover{
+    background: rgba(255, 106, 1,0.9) !important;
+}
+.contact .container-send{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact .experties{
+    height: auto;
+    width: 100%;
+    padding: 35px 0px;
+    background-color: rgb(255, 106, 1,0.9);
+    margin: 35px 0px;
+}
+.experties h3{
+    color: rgba(255, 255, 255,0.9);
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.experties h3::after{
+    content: " ";
+    display: block;
+    background-color: rgba(10, 10, 10,0.9);
+    height: 3px;
+    width: 150px;
+    margin: 5px 0px;
+}
+.experties .container p{
+    color: rgba(255, 255, 255,0.9);
+    font-size: 0.9rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+
+/* ------------------------------------CONTACT---------------------------------------- */
+
+.footer-div{
+    height: auto;
+    width: 100%;
+    padding: 30px 0px;
+    background-color: rgb(56, 56, 56);
+    position: relative;
+}
+.footer-div li i{
+    text-decoration: none !important;
+    color: rgb(215, 196, 176) !important;
+    margin: 0px 40px;
+}
+.footer-div li i:hover,.footer-div p a:hover{
+    text-decoration: none !important;
+    color: rgb(255, 106, 1,0.9) !important;
+    cursor: pointer;
+}
+.footer-div p,.footer-div p a{
+    color: rgb(255, 255, 255,0.9);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
